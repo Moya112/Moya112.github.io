@@ -1,73 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Greek gods</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
-
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-12  jumbotron text-center" style="background-image: 
-                url('https://www.cedars-sinai.org/content/dam/cedars-sinai/blog/2020/06/viruses-bacteria-fungi.jpg');">
-                
-        <h1 style="color:white">Belly Button Biodiversity Dashboard</h1>
-        <h3 style="color:white">Use the interactive charts below to explore the dataset</h3>
-      </div>
-    </div>
-    <div class="container-fluid padding">
-      <div class="row welcome text-center">
-        <div class="col-11">
-          <h1 class="display-4">Welcome</h1>
-        </div>
-        <hr>
-        <div class="col-11">
-          <p class="lead">This project presents a Belly Button Biodiversity Research in order to explore
-             the different types of bacteria that lives in our bodies and their potential use in the industry.</p>
-        </div>
-      </div>
-    </div>
-
-    
-    <div class="row">
-      <div class="col-md-2 col-sm-10 col-xs-10 ">
-        <div class="well">
-          <h5>Test Subject ID No.:</h5>
-          <!-- <select id="selDataset"></select> Dropdown menu options are generated dinamically -->
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        </div>
-        <div class="panel panel-primary" >
-          <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
-          </div>
-          <div class="panel-body" id="sample-metadata" >
-               
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 col-xs-10 col-sm-10">
-        <div id="bar-plot"></div>
-      </div>
-      <div class="col-md-5 col-xs-10 col-sm-10">
-        <div id="gauge"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="bubble"></div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="charts.js"></script>
-
+    <div id="plot"></div>
+    <script src="data.js"></script>
+    <script src="plots.js"></script>
 </body>
-
-
 </html>
